@@ -1,0 +1,86 @@
+@font-face {
+	font-family: "f1_bold";
+	src: url("/static/f1_bold.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "f1_regular";
+	src: url("/static/f1_regular.otf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	background: transparent;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+}
+
+.leaderboard {
+	width: 400px;
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 4px 6px;
+	text-align: left;
+}
+
+thead {
+	font-size: 12px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+}
+
+tr {
+	height: 24px;
+}
+  
+.team-icon {
+	width: 25px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}	
+
+.mer {
+	background-color: #00d7b6;
+}
+.ast {
+	background-color: #229971;
+}
+.mcl {
+	background-color: #f47600;
+}
+.wil {
+	background-color: #1868db;
+}
+.red {
+	background-color: #4781d7;
+}
+.sau {
+	background-color: #01c00e;
+}
+.fer {
+	background-color: #ed1131;
+}
+.rcb {
+	background-color: #6c98ff;
+}
+.haa {
+	background-color: #9c9fa2;
+}
+.alp {
+	background-color: #00a1e8;
+}
