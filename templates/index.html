@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="/static/style.css">
-  <title>Live Timing</title>
-</head>
-<body>
-  <div class="leaderboard">
-    <table>
-      <thead>
-        <tr>
-          <th>POS</th>
-          <th>DRIVER</th>
-          <th>TEAM</th>
-          <th>TIME</th>
-          <th>GAP</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for row in data %}
-        <tr class="{{ row[1]|lower }}">
-          <td>{{ loop.index }}</td>
-          <td>{{ row[0] }}</td>
-          <td>
-            <img src="/static/icons/{{ row[1]|lower }}.png" alt="" class="team-icon">
-          </td>
-          <td>{{ row[2] }}</td>
-          <td>{{ row[3] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/static/style.css">
+		<title>Live Timing</title>
+	</head>
+	<body>
+	<div class="leaderboard">
+		<table>
+		<thead>
+			<tr>
+			<th>POS</th>
+			<th>DRIVER</th>
+			<th>TEAM</th>
+			<th>TIME</th>
+			<th>GAP</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for row in data %}
+			<tr class="{{ row[1]|lower }}">
+			<td>{{ loop.index }}</td>
+			<td>{{ row[0] }}</td>
+			<td><img src="/static/icons/{{ row[1]|lower }}.png" alt="" class="team-icon"></td>
+			<td>{{ row[2] }}</td>
+			<td>{{ row[3] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+		</table>
+	</div>
+	</body>
 </html>

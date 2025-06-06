@@ -47,13 +47,14 @@ tr {
 }
   
 .team-icon {
-	width: 25px;
+	width: 20px;
 	height: 20px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }	
 
+/*
 .mer {
 	background-color: #00d7b6;
 }
@@ -84,3 +85,4 @@ tr {
 .alp {
 	background-color: #00a1e8;
 }
+*/
